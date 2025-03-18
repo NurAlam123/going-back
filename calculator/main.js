@@ -79,7 +79,7 @@ const calculator = (value) => {
       }
       break;
     default:
-      if (preventConsecutiveOperators(value)) {
+      if (preventDuplicateOp(value)) {
         removeLeftZero();
         equation += value;
       }
