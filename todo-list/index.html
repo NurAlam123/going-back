@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo List</title>
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div>
+        <div class="todo__input-wrapper">
+          <input
+            id="todo-input"
+            class="todo__input"
+            placeholder="What are you up to today?"
+            autofocus
+          />
+        </div>
+        <div>
+          <h1 class="todo__heading">Todo [ <span>02</span> ]</h1>
+          <div id="todo-container">
+            <div class="nothing-to-do">Nothing to do...</div>
+            <div class="todo">
+              <div class="todo__element">
+                <div>
+                  <img
+                    src="assets/checkbox.svg"
+                    alt="checkbox"
+                    class="checkbox"
+                  />
+                  <p class="todo__title">Complete this todo</p>
+                </div>
+                <img src="assets/delete.svg" alt="delete" class="delete" />
+              </div>
+              <hr />
+            </div>
+            <div class="todo">
+              <div class="todo__element">
+                <div>
+                  <img
+                    src="assets/checkbox-checked.svg"
+                    alt="checkbox"
+                    class="checkbox"
+                    checked
+                  />
+                  <p class="todo__title">Add a todo</p>
+                </div>
+                <img src="assets/delete.svg" alt="delete" class="delete" />
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
